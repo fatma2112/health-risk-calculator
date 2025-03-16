@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Health Insurance Risk Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>Health Insurance Risk Calculator</h1>
+  <p>Welcome! Enter your health details below to calculate your insurance risk. Use centimeters (cm) for height and kilograms (kg) for weight. All fields are required.</p>
+  <form id="riskForm">
+    <label>Age: <input type="number" name="age" placeholder="e.g., 35" required></label><br>
+    <label>Height (cm): <input type="number" name="height" placeholder="e.g., 170" required></label><br>
+    <label>Weight (kg): <input type="number" name="weight" placeholder="e.g., 70" required></label><br>
+    <label>Systolic BP: <input type="number" name="systolic" placeholder="e.g., 120" required></label><br>
+    <label>Diastolic BP: <input type="number" name="diastolic" placeholder="e.g., 80" required></label><br>
+    <label>Family History:</label><br>
+    <label><input type="checkbox" name="history" value="diabetes"> Diabetes</label><br>
+    <label><input type="checkbox" name="history" value="cancer"> Cancer</label><br>
+    <label><input type="checkbox" name="history" value="alzheimers"> Alzheimer’s</label><br><br>
+    <button type="submit">Calculate Risk</button>
+  </form>
+  <div id="result"></div>
+</body>
+</html>
