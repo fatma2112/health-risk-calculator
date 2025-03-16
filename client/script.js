@@ -23,7 +23,7 @@ document.getElementById('riskForm').addEventListener('submit', async (e) => {
     resultDiv.innerText = `Summary:\nAge: ${data.age}\nHeight: ${data.height} cm\nWeight: ${data.weight} kg\nBlood Pressure: ${data.systolic}/${data.diastolic} mmHg\nFamily History: ${data.history.length ? data.history.join(", ") : "None"}`;
   
     try {
-      const res = await fetch('http://localhost:7071/api/calculateRisk', {
+        const res = await fetch('/api/calculateRisk', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
