@@ -23,7 +23,7 @@ document.getElementById('riskForm').addEventListener('submit', async (e) => {
   resultDiv.innerText = `Summary:\nAge: ${data.age}\nHeight: ${data.height} cm\nWeight: ${data.weight} kg\nBlood Pressure: ${data.systolic}/${data.diastolic} mmHg\nFamily History: ${data.history.length ? data.history.join(", ") : "None"}`;
 
   try {
-      const res = await fetch('https://icy-ocean-0eedbbc0f.6.azurestaticapps.net/api/calculateRisk', {
+      const res = await fetch('https://kind-grass-03289430f.6.azurestaticapps.net/api/calculateRisk', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)

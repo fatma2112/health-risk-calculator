@@ -3,7 +3,7 @@ module.exports = async function (context, req) {
       context.res = {
         status: 204,
         headers: {
-          "Access-Control-Allow-Origin": "https://icy-ocean-0eedbbc0f.6.azurestaticapps.net",
+          "Access-Control-Allow-Origin": "https://kind-grass-03289430f.6.azurestaticapps.net",
           "Access-Control-Allow-Methods": "POST",
           "Access-Control-Allow-Headers": "Content-Type",
           "Access-Control-Max-Age": "86400"
@@ -36,7 +36,7 @@ module.exports = async function (context, req) {
       status: 200,
       headers: {
         // Replace existing CORS header
-        "Access-Control-Allow-Origin": "https://icy-ocean-0eedbbc0f.6.azurestaticapps.net",
+        "Access-Control-Allow-Origin": "https://kind-grass-03289430f.6.azurestaticapps.net",
         "Access-Control-Allow-Methods": "POST",
         "Access-Control-Allow-Headers": "Content-Type",
         "Content-Type": "application/json"
